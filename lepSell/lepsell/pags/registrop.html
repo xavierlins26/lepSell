@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>LepSell - Registrar Produto</title>
+  <link rel="stylesheet" href="../css/registro.css">
+</head>
+<body>
+
+  <a href="../index.html" class="voltar-icone">
+    <img src="../img/seta_icon.png" alt="Voltar" style="width:32px; height:32px;">
+  </a>
+
+
+  <header class="cabecalho">
+    <h2>LepSell - Registrar Produto</h2>
+  </header>
+
+  <div class="container">
+
+    <section class="nota">
+      <h1 style="margin-bottom: 8px; color: #0C1D4A; font-size: 2rem; letter-spacing: 2px;">Registrar Produto</h1>
+      <hr style="border: none; border-top: 2px solid #25d9f0; margin-bottom: 18px;">
+
+      <form class="formulario">
+        <label for="nome">Nome do Produto:</label>
+        <input type="text" id="nome" placeholder="Ex: Camiseta Preta Tam M" required>
+
+        <label for="preco">Preço:</label>
+        <input type="number" id="preco" step="0.01" placeholder="Ex: 49.90" required>
+
+        <label for="tamanho">Tamanho:</label>
+        <select id="tamanho" required>
+          <option value="">Selecione...</option>
+          <option>P</option>
+          <option>M</option>
+          <option>G</option>
+          <option>GG</option>
+        </select>
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" rows="3" placeholder="Detalhes do produto"></textarea>
+
+        <div class="botoes">
+
+          <button type="submit" class="botao"><span style="margin-right:8px;"></span>Salvar Produto</button>
+          <a href="./carrinho.html">
+            <button type="button" class="botao"><span style="margin-right:8px;"></span>Voltar ao Carrinho</button>
+          </a>
+        </div>
+      </form>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 LepSell. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

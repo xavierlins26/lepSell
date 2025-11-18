@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>LepSell - Descontos</title>
+  <link rel="stylesheet" href="../css/desconto.css">
+</head>
+<body>
+
+  <a href="../index.html" class="voltar-icone">
+    <img src="../img/seta_icon.png" alt="Voltar" style="width:32px; height:32px;">
+  </a>
+
+  <header class="cabecalho">
+    <h2>LepSell - Aplicar Descontos</h2>
+  </header>
+
+  <div class="container">
+
+    <section class="nota">
+      <h1 style="margin-bottom: 8px; color: #0C1D4A; font-size: 2rem; letter-spacing: 2px;">Descontos</h1>
+      <hr style="border: none; border-top: 2px solid #25d9f0; margin-bottom: 18px;">
+
+      <form class="formulario">
+        <label for="cupom">Cupom de Desconto:</label>
+        <input type="text" id="cupom" placeholder="Ex: PROMO10">
+
+        <label for="percentual">Desconto (%):</label>
+        <input type="number" id="percentual" min="0" max="100" placeholder="Ex: 15">
+
+        <label for="valor">Desconto em R$:</label>
+        <input type="number" id="valor" step="0.01" placeholder="Ex: 20.00">
+
+        <div class="valor-final">
+          <span>Valor Atual:</span>
+          <span style="color:#25d9f0; font-size:1.2rem;">R$ 221,94</span>
+        </div>
+
+        <div class="valor-final">
+          <span>Com Desconto:</span>
+          <span style="color:#0C1D4A; font-size:1.3rem; font-weight:bold;">R$ 199,74</span>
+        </div>
+
+        <div class="botoes">
+
+          <button type="submit" class="botao"><span style="margin-right:8px;"></span>Aplicar Desconto</button>
+          <a href="./pagamento.html">
+            <button type="button" class="botao"><span style="margin-right:8px;"></span>Cancelar</button>
+          </a>
+        </div>
+      </form>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 LepSell. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

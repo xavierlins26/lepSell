@@ -1,0 +1,235 @@
+/* Estilo geral */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #e0e7ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+   
+  }
+  
+  
+  
+    
+    .cabecalho {
+      background: #0C1D4A;
+      color: #fff;
+      text-align: center;
+      padding: 32px 0 24px 0;
+      margin-bottom: 40px;
+      box-shadow: 0 2px 8px rgba(12, 29, 74, 0.12);
+      border-radius: 0 0 18px 18px;
+      width: 100%;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 600px;
+        background: #fff;
+        padding: 30px;
+        border-radius: 18px;
+        box-shadow: 0 6px 24px rgba(12, 29, 74, 0.1);
+        text-align: center;
+        transition: box-shadow 0.3s;
+        color: #000000;
+        margin: 0 auto; /* Centraliza horizontalmente */
+      }
+    
+    .nota {
+      background: #fff;
+      width: 350px;
+      border-radius: 18px;
+      padding: 28px 24px;
+      border: none;
+      box-shadow: 0 6px 24px rgba(12, 29, 74, 0.10);
+    }
+    
+    .nota:hover {
+      box-shadow: 0 12px 32px rgba(12, 29, 74, 0.18);
+    }
+    
+    .nota h2 {
+      text-align: center;
+      margin-bottom: 18px;
+      color: #0C1D4A;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+    
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      font-size: 15px;
+      padding: 8px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .descricao {
+      max-width: 200px;
+      color: #374151;
+    }
+    
+    .valor-total {
+      display: flex;
+      justify-content: space-between;
+      border-top: 3px solid #0C1D4A;
+      margin-top: 24px;
+      padding-top: 12px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #0C1D4A;
+    }
+    
+    .botoes {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-top: 40px;
+      align-items: center;
+    }
+    
+    .botao {
+      background: rgba(12, 29, 74, 0.18);;
+      color: #fff;
+      border: none;
+      padding: 14px 32px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    
+    .botao:hover {
+      background: rgba(12, 29, 74, 0.18);
+  
+    
+    color: #fff;
+    text-align: center;
+    padding: 32px 0 24px 0;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(12, 29, 74, 0.12);
+    border-radius: 0 0 18px 18px;
+  }
+  
+  .cabecalho h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .cabecalho p {
+    font-size: 1rem;
+    margin: 8px 0 0 0;
+  }
+  
+  /* Container principal */
+  .container {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 6px 24px rgba(12, 29, 74, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s;
+    color: #000000;
+  }
+  
+  .container:hover {
+    box-shadow: 0 12px 32px rgba(12, 29, 74, 0.18);
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Informações da compra */
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #374151;
+  }
+  
+  .info-item {
+    margin: 10px 0;
+  }
+  
+  /* Botões de pagamento */
+  .payment-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background:#25d9f0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 8px 10px;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s;
+    width: 180px;
+    box-shadow: 0 2px 8px rgba(12, 29, 74, 0.1);
+  }
+  
+  .payment-button:hover {
+    background:#0C1D4A;
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(12, 29, 74, 0.18);
+  }
+  
+  /* Grupo de botões */
+  .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+  
+  /* Botões de ações adicionais */
+  .full-width-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    background:#000000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(12, 29, 74, 0.1);
+  }
+  
+  .full-width-button:hover {
+    background: #231cee;
+    box-shadow: 0 4px 16px rgba(12, 29, 74, 0.18);
+  }
+  
+  /* Rodapé */
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #0C1D4A;
+    color: white;
+}
+  
+  .footer p {
+    margin: 0;
+  }
+  
