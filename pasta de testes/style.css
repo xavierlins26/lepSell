@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f7f9fc;
+}
+
+header {
+    background: #0C1D4A;
+    color: #fff;
+    text-align: center;
+    padding: 32px 0 24px 0;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(12, 29, 74, 0.12);
+    border-radius: 0 0 18px 18px;
+}
+
+header {
+    position: relative; /* Permite posicionar os ícones no canto superior direito */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 20px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os ícones */
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.user-menu {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none; /* Oculto por padrão */
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #0C1D4A;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background: #f0f0f0;
+}
+
+.user-menu:hover .dropdown-menu {
+    display: block; /* Mostra o menu ao passar o mouse */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    max-width: 1000px;
+    margin: 100px auto 0 auto;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 48px 32px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.13);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    min-width: 220px;
+    min-height: 220px;
+    max-width: 320px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 22px;
+}
+
+.card p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #0C1D4A;
+}
+
+.sobrenois {
+    text-align: left;
+}
+
+a {
+    color: #f7f9fc;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background: #0C1D4A;
+    color: white;
+}
